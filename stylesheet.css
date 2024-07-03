@@ -221,3 +221,30 @@ label{
     display: none;
 }
 
+@media screen and (max-width:800px) {
+    
+    .container {
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+    }
+
+    .left {
+        padding:1.5rem;
+    }
+
+    .right{
+        padding: 1.5rem;
+    }
+
+    .year-rate-con{
+        display: block;
+    }
+    
+    .button{
+        width: 80%;
+    }
+    
+    
+}
