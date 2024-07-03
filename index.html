@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <title>Frontend Mentor | Mortgage repayment calculator</title>
+    <link rel="stylesheet" href="./stylesheet.css">
+</head>
+<body>
+    <main class="container">
+        <div class="left">
+            <div class="title">
+                <h1>Mortgage Calculator</h1>
+                <p class="clearAll">Clear All</p>
+            </div>
+            <form>
+                <div class="mortgage-info">
+                    <div class="mortgage-amount-con">
+                        <label for="mortgage-amount">Mortgage Amount</label>
+                        <div class="input-container amount">
+                            <span>$</span>
+                            <input type="number" id="mortgage-amount">
+                        </div>
+                    </div>
+                    <div class="year-rate-con">
+                        <div class="years-con">
+                            <label for="years">Mortgage Years</label>
+                            <div class="input-container">
+                                <input type="number" id="years">
+                                <span>years</span>
+                            </div>
+                        </div>
+                        <div class="rate-con">
+                            <label for="rate">Mortgage Rates</label>
+                            <div class="input-container">
+                                <input type="number" id="rate">
+                                <span>%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mortgage-type">
+                        <label >Mortgage Type</label>
+                        <div class="repayment">
+                            <input type="radio" id="repayment-checkbox">
+                            <label for="repayment-checkbox">Repayment</label>
+                        </div>
+                        <div class="interest-rate">
+                            <input type="radio" id="rates-checkbox">
+                            <label for="rates-checkbox">Interest Only</label>
+                        </div>
+                    </div>
+                    <button>Calculate Repayment</button>
+                </div>
+            </form>
+        </div>
+        <div class="right">
+            <div class="calculator-img">
+                <img src="./assets/images/illustration-empty.svg" alt="">
+            </div>
+            <div class="right-text">
+                <h2>Results shown here</h2>
+                <p>Complete the form and click “calculate repayments” to see what your monthly repayments would be.</p>
+            </div>
+            <div class="results-con">
+                <div class="results-text">
+                    <h2>  Your results </h2>
+                    <p> Your results are shown below based on the information you provided. 
+                        To adjust the results, edit the form and click “calculate repayments” again.
+                    </p>
+                </div>
+                <div class="results">
+                    <label for="monthly-Amount">Your monthly repayments:</label>
+                    <p class="monthly-Amount">$0.00</p>
+                    <hr>
+                    <label for="total-Amount">Total you'll repay over the term:</label>
+                    <p class="total-Amount" >$0.00</p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
+    
+
+</body>
+</html>

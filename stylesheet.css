@@ -1,0 +1,223 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    margin: 0;
+    background-color:  hsl(202, 86%, 94%);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    max-width: 1400px;   
+    background-color: white;
+    border-radius: 20px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.title h1 {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.clearAll {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.mortgage-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.mortgage-amount-con,
+.year-rate-con {
+    margin-bottom: 1.5rem;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.input-container span {
+    background-color:hsl(203, 41%, 72%);
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: #555;
+}
+
+.input-container input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    flex-grow: 1;
+    
+}
+
+.amount span {
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+}
+
+.amount input {
+    border-radius: 0 4px 4px 0;
+    border-left: none;
+}
+
+.years-con span,
+.rate-con span {
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+}
+
+.years-con input,
+.rate-con input {
+    border-right: none;
+    border-radius: 4px 0 4px 0px;
+}
+
+.year-rate-con{
+    display: flex;
+    gap: 2rem;
+}
+
+.mortgage-type {
+    margin-top: 1.5rem;
+}
+
+.repayment,
+.interest-rate {
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    margin-top: 0.9rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.repayment input,
+.interest-rate input {
+    margin-right: 0.5rem;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem;
+    padding-left: 6rem;
+    background-color: hsl(202, 55%, 16%);
+    color: white;
+    border-radius: 0 20px 20px 80px;
+}
+
+.calculator-img img {
+    max-width: 100%;
+}
+
+.right-text {
+    margin-top: 2rem;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color:hsl(61, 70%, 50%);
+    color:black;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    width: 50%;
+    margin-top: 2rem;
+    background-image: url("./assets/images/icon-calculator.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 2rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+label{
+    color: grey;
+    font-size: small;
+    
+}
+
+#repayment-checkbox,
+#rates-checkbox {
+    margin-left: 1rem;
+}
+
+.results-text p {
+    font-size: 16px;
+    margin-top: 2rem;
+}
+
+.results-text h2 {
+    font-size: 40px;
+}
+
+.results-text {
+    color: gray;
+}
+
+
+.results{
+    margin-top: 5rem;
+    text-align:start;
+    background-color: hsl(202, 55%, 10%);
+    padding: 2rem;
+    box-shadow: 0px -10px 10px -1px hsl(61, 70%, 52%);
+    border-radius: 15px 15px  0 0 ;
+}
+
+.monthly-Amount {
+    font-size: 70px;
+    margin-top: 0.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.total-Amount {
+    font-size: 40px;
+    margin-top: 0.25rem;
+}
+
+.results hr {
+    color: lightgrey;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.results-con {
+    display: none;
+}
+
